@@ -567,11 +567,11 @@ add_label_with_icon|big|`2BUY PROXY? DM`0:`2ErzaGT#erza gt|left|5770|
 add_spacer|small|
 add_custom_button||image:proxypicture/banner.rttex;image_size:1024,256;width:1.00;|
 add_spacer|small|
-add_label_with_icon|big|   `5CASINO `$TEAM HUGE``|left|
+add_label_with_icon|big|        `5CASINO `$TEAM HUGE``|left|
 add_spacer|small|
-add_label_with_icon|medium|  `5[`$do /huge`5] ``|left|
+add_label_with_icon|medium|                                 `5[`$do /huge`5] ``|left|
 add_spacer|small|
-add_label_with_icon|medium|`5[`2AUTO WARP TO HUGE LINK`5] ``|left|
+add_label_with_icon|medium|                 `5[`2AUTO WARP TO HUGE LINK`5] ``|left|
 add_spacer|small|
 add_label|medium|`2__________________________________________________``|left|
 add_spacer|small|
@@ -590,7 +590,7 @@ add_custom_button|proxy_shortcut2|image:proxypicture/world.rttex;image_size:400,
 add_custom_button|proxy_shortcut3|image:proxypicture/wrench.rttex;image_size:400,260;width:0.19;|
 add_custom_button|proxy_shortcu13|image:proxypicture/casino.rttex;image_size:400,260;width:0.19;|
 add_custom_button|proxy_shortcu14|image:proxypicture/title.rttex;image_size:400,260;width:0.19;|
-add_custom_button|proxy_shortcu16|image:proxypicture/gui_wrench_a15.rttex;image_size:400,260;width:0.19;|
+add_custom_button|proxy_shortcu16|image:proxypicture/visual.rttex;image_size:400,260;width:0.19;|
 add_custom_button|proxy_shortcut4|image:proxypicture/growscan.rttex;image_size:400,260;width:0.19;|
 add_custom_button|proxy_shortcut5|image:proxypicture/farm.rttex;image_size:400,260;width:0.19;|
 add_custom_button|proxy_shortcut6|image:proxypicture/join.rttex;image_size:400,260;width:0.19;|
@@ -617,11 +617,11 @@ add_label_with_icon|big|`2BUY PROXY? DM`0:`2ErzaGT#erza gt|left|5770|
 add_spacer|small|
 add_custom_button||image:proxypicture/banner.rttex;image_size:1024,256;width:1.00;|
 add_spacer|small|
-add_label_with_icon|big|   `5CASINO `$TEAM HUGE``|left|
+add_label_with_icon|big|        `5CASINO `$TEAM HUGE``|left|
 add_spacer|small|
-add_label_with_icon|medium|  `5[`$do /huge`5] ``|left|
+add_label_with_icon|medium|                                 `5[`$do /huge`5] ``|left|
 add_spacer|small|
-add_label_with_icon|medium|`5[`2AUTO WARP TO HUGE LINK`5] ``|left|
+add_label_with_icon|medium|                 `5[`2AUTO WARP TO HUGE LINK`5] ``|left|
 add_spacer|small|
 add_label|medium|`2__________________________________________________``|left|
 add_spacer|small|
@@ -1834,13 +1834,13 @@ count_fake_wl = packet:gsub("action|input\n|text|/donatewl", "")
 var = {}
 var[0] = "OnTalkBubble"
 var[1] = GetLocal().netid
-var[2] = "`7[```5[``"..GetLocal().name.." places`5"..count_fake_wl.."`` `2World Lock`` into the Donation Box`5]```7]``"
+var[2] = "`7[```5[``"..GetLocal().name.." places `5"..count_fake_wl.."`` `2World Lock`` into the Donation Box`5]```7]``"
 var[3] = 0
 var[4] = 0
 var.netid = -1
 SendVarlist(var)
 
-OnConsoleMessage("`7[```5[``"..GetLocal().name.." places`5"..count_fake_wl.."`` `2World Lock`` into the Donation Box`5]```7]``")
+OnConsoleMessage("`7[```5[``"..GetLocal().name.." places `5"..count_fake_wl.."`` `2World Lock`` into the Donation Box`5]```7]``")
   return true
 end
   end
@@ -1853,13 +1853,13 @@ count_fake_dl = packet:gsub("action|input\n|text|/donatedl", "")
 var = {}
 var[0] = "OnTalkBubble"
 var[1] = GetLocal().netid
-var[2] = "`7[```5[``"..GetLocal().name.." places`5"..count_fake_dl.."`` `2Diamond Lock`` into the Donation Box`5]```7]``"
+var[2] = "`7[```5[``"..GetLocal().name.." places `5"..count_fake_dl.."`` `2Diamond Lock`` into the Donation Box`5]```7]``"
 var[3] = 0
 var[4] = 0
 var.netid = -1
 SendVarlist(var)
 
-OnConsoleMessage("`7[```5[``"..GetLocal().name.." places`5"..count_fake_dl.."`` `2Diamond Lock`` into the Donation Box`5]```7]``")
+OnConsoleMessage("`7[```5[``"..GetLocal().name.." places `5"..count_fake_dl.."`` `2Diamond Lock`` into the Donation Box`5]```7]``")
   return true
 end
   end
@@ -1872,13 +1872,13 @@ count_fake_bgl = packet:gsub("action|input\n|text|/donatebgl", "")
 var = {}
 var[0] = "OnTalkBubble"
 var[1] = GetLocal().netid
-var[2] = "`7[```5[``"..GetLocal().name.." places`5"..count_fake_bgl.."`` `2Blue Gem Lock`` into the Donation Box`5]```7]``"
+var[2] = "`7[```5[``"..GetLocal().name.." place s`5"..count_fake_bgl.."`` `2Blue Gem Lock`` into the Donation Box`5]```7]``"
 var[3] = 0
 var[4] = 0
 var.netid = -1
 SendVarlist(var)
 
-OnConsoleMessage("`7[```5[``"..GetLocal().name.." places`5"..count_fake_bgl.."`` `2Blue Gem Lock`` into the Donation Box`5]```7]``")
+OnConsoleMessage("`7[```5[``"..GetLocal().name.." places `5"..count_fake_bgl.."`` `2Blue Gem Lock`` into the Donation Box`5]```7]``")
   return true
 end
   end
@@ -7255,7 +7255,6 @@ wl_count = math.floor(GetItemCount(242))
 final_wl_fortax = wl_count
 final_dl_fortax = dl_count * 100
 total_locks = (final_wl_fortax + final_dl_fortax) / 2
-SendPacket(2, "action|input\n|text|")
 drop(total_locks)
   return true
 end
@@ -9161,6 +9160,6 @@ AddCallback("finditem", "OnPacket", finditem)
 
 AddCallback("fastdice", "OnIncomingRawPacket", function(packet)
 if packet.type == 8 and packet.int_data == 0 and GetTile(packet.int_x, packet.int_y).fg == 456 then
-SendVarlist({[0] = "OnConsoleMessage", [1] = "CP:0_PL:0_OID:_CT:[SB]_ `2Dice : `9"..math.floor(packet.count2 + 1), netid = -1})
+SendVarlist({[0] = "OnConsoleMessage", [1] = "CP:0_PL:0_OID:_CT:[SB]_ `0[ `2Erza `0] `2Dice `0: `9"..math.floor(packet.count2 + 1), netid = -1})
 end
 end)
